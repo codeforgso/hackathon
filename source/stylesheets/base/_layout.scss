@@ -9,12 +9,13 @@ body {
 
 section {
   margin: 0 !important;
+  padding: $base-spacing*2 0;
 
   &.hero {
     background: $red url('/images/jsnn.png') center center no-repeat fixed;
     background-size: cover;
     color: #fff;
-    padding: $base-spacing*6 inherit;
+    padding: $base-spacing*6 0;
 
     // Type
     h1, h5 {
@@ -33,7 +34,6 @@ section {
   &.schedule {
     background: darken($sand, 5%);
     overflow: hidden;
-    padding: $base-spacing*2 inherit;
 
     .has-list {
       @include span-columns(5);
@@ -69,7 +69,6 @@ section {
   }
 
   &.sponsors {
-    padding: $base-spacing*2 inherit;
 
     .feature {
       @include span-columns(4);
@@ -77,7 +76,6 @@ section {
   }
 
   &.speakers {
-    padding: $base-spacing*2 inherit;
   }
 
   &.venue {
