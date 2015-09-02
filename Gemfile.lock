@@ -7,6 +7,13 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    bitters (1.0.0)
+      bourbon (>= 3.2)
+      sass (>= 3.2)
+      thor
+    bourbon (4.2.3)
+      sass (~> 3.4)
+      thor
     celluloid (0.16.0)
       timers (~> 4.0.0)
     chunky_png (1.3.4)
@@ -33,6 +40,7 @@ GEM
     eventmachine (1.0.8)
     execjs (2.6.0)
     ffi (1.9.10)
+    git-version-bump (0.15.1)
     haml (4.0.7)
       tilt
     hike (1.2.3)
@@ -82,6 +90,9 @@ GEM
       sprockets-sass (~> 1.3.0)
     minitest (5.8.0)
     multi_json (1.11.2)
+    neat (1.7.2)
+      bourbon (>= 4.0)
+      sass (>= 3.3)
     padrino-helpers (0.12.5)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.12.5)
@@ -89,6 +100,9 @@ GEM
     padrino-support (0.12.5)
       activesupport (>= 3.1)
     rack (1.6.4)
+    rack-contrib (1.4.0)
+      git-version-bump (~> 0.15)
+      rack (~> 1.4)
     rack-livereload (0.3.16)
       rack
     rack-test (0.6.3)
@@ -123,7 +137,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bitters
+  bourbon
   middleman (~> 3.3.12)
   middleman-livereload (~> 3.1.0)
-  tzinfo-data
+  neat
+  rack-contrib
   wdm (~> 0.1.0)

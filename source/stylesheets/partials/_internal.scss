@@ -1,0 +1,14 @@
+header.internal {
+  background: $red;
+  padding: $base-spacing;
+  color: $sand;
+
+  .wrapper {
+    padding: 0;
+  }
+
+  h4 {
+    line-height: 1;
+    margin: 0;
+  }
+}

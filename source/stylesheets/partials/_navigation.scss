@@ -1,0 +1,37 @@
+.menu-trigger {
+  width: modular-scale(2);
+  height: modular-scale(2);
+  border-radius: 100px;
+  position: fixed;
+  top: $base-spacing;
+  left: $base-spacing;
+  color: $sand;
+  font-size: modular-scale(2);
+  border: 1px solid $sand;
+  text-align: center;
+  line-height: 1.75;
+  background: $red;
+  @include transition(all 0.30s ease-in-out);
+
+  &.is-close-button {
+    left: $base-spacing*5;
+  }
+}
+
+ul.menu-list {
+  position: fixed;
+  top: 0;
+  left: -400px;
+  overflow: hidden;
+  height: 100%;
+  background: darken($dark-purple, 20%);
+  color: $light-purple;
+  padding: $small-spacing $base-spacing*2 $small-spacing $small-spacing;
+  @include transition(all 0.30s ease-in-out);
+  li {
+    padding: $small-spacing;
+  }
+  &.menu-open {
+    left: 0;
+  }
+}

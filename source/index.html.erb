@@ -8,45 +8,104 @@ title: Home
     <h1 class="is-centered">Explore. Build. Improve.</h1>
     <h5 class="is-centered">November 6-8, 2015 &bullet; Joint School of Nanoscience and Nanoengineering &bullet; Greensboro, NC</h5>
 
-    <div class="button">Get Your Ticket</div>
+    <div class="button sand">Get Your Ticket</div>
 
   </div>
 </section>
 
 <section class="about">
   <div class="wrapper">
-    <h3 class="is-centered is-intro">The Code for Greensboro Fall Hackathon is a chance for developers, designers and technologists to team up under one roof and work together on a wide range of projects.</h3>
+    <h3 class="is-centered is-intro">Work with Greensboro's open data, meet awesome people, and make a difference in your community.</h3>
 
     <hr>
 
-    <article>
+    <div class="third">
       <aside class="feature">
         <%=image_tag ("/images/blueprint.png") %>
       </aside>
-      <h4>Join a team</h4>
-      <h5>
-      Team up and conceive news ways of using datasets from Greensboro's brand new Open Data Portal. Forge partnerships with members and residents from tons of different skillsets, and set about making something new and amazing.
-    </h5>
-    </article>
+      <h4>Join &amp; Plan</h4>
+      <p>Forge partnerships with members and residents from tons of different skillsets, and set about making something new and amazing.
+    </p>
+  </div>
 
-    <article>
+    <div class="third">
       <aside class="feature">
         <%=image_tag ("/images/working.png") %>
       </aside>
-      <h4>Build and have fun</h4>
-      <h5>Work on projects, enjoy the company of other technologists, and get a chance to hear about open and civic technology.
-      </h5>
-    </article>
+      <h4>Build &amp; Solve</h4>
+      <p>Work on projects, enjoy the company of other technologists, and get a chance to hear about open and civic technology.
+      </p>
+    </div>
 
-    <article>
+    <div class="third">
       <aside class="feature">
         <%=image_tag ("/images/bot.png") %>
       </aside>
-      <h4>Create something new &amp; rad</h4>
-      <h5>This is your chance to build something that can help your community using technology. And along with the satisfaction of a job well done, your project could win prizes.
-      </h5>
-    </article>
+      <h4>Help &amp; Create</h4>
+      <p>Build something that can help your community using technology. And who knows? Maybe you'll win prizes.
+      </p>
+    </div>
   </div>
+</section>
+
+<section class="speakers">
+  <h3 class="is-centered">Speakers</h3>
+
+  <div class="wrapper">
+
+    <div class="avatar">
+      <%=image_tag "http://api.randomuser.me/portraits/med/women/39.jpg", :class => "round" %>
+      <h4>Jane Nickles</h4>
+      <h5>CIO, City of Greensboro</h5>
+    </div>
+
+    <div class="avatar">
+      <%=image_tag "http://api.randomuser.me/portraits/med/men/39.jpg", :class => "round" %>
+      <h4>Jason Hibbets</h4>
+      <h5>Community Director, Red Hat</h5>
+    </div>
+
+    <div class="avatar">
+      <%=image_tag "http://api.randomuser.me/portraits/med/women/23.jpg", :class => "round" %>
+      <h4>Julia Elman</h4>
+      <h5>Front End Designer, 18f</h5>
+    </div>
+
+    <div class="avatar">
+      <%=image_tag "http://api.randomuser.me/portraits/med/men/16.jpg", :class => "round" %>
+      <h4>Jony Ive</h4>
+      <h5>VP of Design, Apple</h5>
+    </div>
+
+  </div>
+
+  <div class="button red spaced">Register Now</div>
+
+</section>
+
+<section class="venue">
+  <div class="wrapper">
+    <div class="half">
+      <%=image_tag ('/images/hq.jpg') %>
+      <div class="caption">
+        <h3 class="is-centered">HQ Greensboro</h3>
+        <h4 class="is-centered">Kickoff Night - Nov. 6 @ 5:00 PM</h4>
+        <p>The JSNN is a unique partnership between A&amp;T State University and The University of North Carolina at Greensboro. It features over 100,000 square feet of academic and industrial research and learning space, featuring scientific equipment paralleled by only a handful of facilities in the world.</p>
+        <p>The Joint School is a testament to how science, engineering and technology have always been cornerstones of the Triad—and how Code for Greensboro, its members, and Greensboro's residents are working hard to keep it that way.</p>
+      </div>
+    </div>
+
+    <div class="half">
+      <%=image_tag ('/images/jsnn.jpg') %>
+      <div class="caption">
+        <h3 class="is-centered">JSNN Campus</h3>
+        <h4 class="is-centered">Hackathon Weekend - Nov. 7-8</h4>
+        <p>The Joint School of Nanoscience and Nanoengineering is a unique partnership between A&amp;T State University and The University of North Carolina at Greensboro. It features over 100,000 square feet of academic and industrial research and learning space, featuring scientific equipment paralleled by only a handful of facilities in the world.</p>
+        <p>The Joint School is a testament to how science, engineering and technology have always been cornerstones of the Triad—and how Code for Greensboro, its members, and Greensboro's residents are working hard to keep it that way.</p>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <section class="schedule">
@@ -67,54 +126,35 @@ title: Home
       <li>Wooden Nickel Beers - Gibbs Hundred <span class="time">5:00 - 8:00 PM</span></li>
     </ul>
   </div>
+
+  <div class="has-list" id="saturday">
+    <ul>
+      <li>Kickoff Happy Hour - HQ Greensboro <span class="time">5:00 - 8:00 PM</span></li>
+      <li>Open House - The Forge <span class="time">5:00 - 8:00 PM</span></li>
+      <li>Wooden Nickel Beers - Gibbs Hundred <span class="time">5:00 - 8:00 PM</span></li>
+    </ul>
+  </div>
+
+  <div class="has-list" id="sunday">
+    <ul>
+      <li>Kickoff Happy Hour - HQ Greensboro <span class="time">5:00 - 8:00 PM</span></li>
+      <li>Open House - The Forge <span class="time">5:00 - 8:00 PM</span></li>
+      <li>Wooden Nickel Beers - Gibbs Hundred <span class="time">5:00 - 8:00 PM</span></li>
+    </ul>
+  </div>
+
 </section>
 
-<section class="what-to-expect">
-  <h3 class="is-centered">What To Expect</h3>
+<section class="sponsors">
+  <h3 class="is-centered">Sponsored by</h3>
 
   <div class="wrapper">
 
-    <div class="card">
-      <dl class="heading">
-        <dt>Our People</dt>
-        <dd class="icon">
-          <i class="fa fa-users"></i>
-        </dd>
-      </dl>
-      <p class="small">Designers, developers—both new and experienced—UI/UX specialists, database admins, project managers and anyone who has ideas about technology and how it should be used in Greensboro.</p>
-    </div>
-
-    <div class="card">
-      <dl class="heading">
-        <dt>Our Location</dt>
-        <dd class="icon">
-          <i class="fa fa-map-marker"></i>
-        </dd>
-      </dl>
-      <p class="small">The Joint School of Nanoscience and Nanotechnology, an academic and industrial research campus resulting from a partnership between A&amp;T State University and the University of North Carolina at Greensboro.</p>
-    </div>
-
-    <div class="card">
-      <dl class="heading">
-        <dt>Food &amp; Drink</dt>
-        <dd class="icon">
-          <i class="fa fa-beer"></i>
-        </dd>
-      </dl>
-      <p class="small">Each ticket includes breakfast and lunch on Saturday and Sunday, as well as drinks and snacks. Don't worry: we'll keep you fueled up while you hack.</p>
-    </div>
-
-    <div class="card">
-      <dl class="heading">
-        <dt>Prizes</dt>
-        <dd class="icon">
-          <i class="fa fa-trophy"></i>
-        </dd>
-      </dl>
-      <p class="small">Your team can compete for a variety of prizes being offered by our sponsors. For official rules, visit the contest page.</p>
-    </div>
+    <%=image_tag ('/images/sponsors.png') %>
 
   </div>
+
+  <div class="button red spaced">Don't Miss Out</div>
 
 </section>
 

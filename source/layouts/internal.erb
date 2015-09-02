@@ -24,8 +24,13 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "partials/navigation" %>
-    
+
+    <header class="internal">
+      <div class="wrapper">
+        <h4><%=current_page.data.title %></h4>
+      </div>
+    </header>
+
     <%= yield %>
 
     <%= partial "partials/footer" %>

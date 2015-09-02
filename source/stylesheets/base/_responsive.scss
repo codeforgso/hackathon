@@ -1,0 +1,18 @@
+@include media($small-screen-up) {
+  .card {
+    @include span-columns(4);
+  }
+}
+
+@include media($medium-screen-up) {
+  .card {
+    @include span-columns(8);
+  }
+}
+
+@include media($large-screen-up) {
+  .card {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+}

@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+
+body {
+  @include font-feature-settings("kern", "liga", "pnum");
+  -webkit-font-smoothing: antialiased;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing/2;
+  font-weight: lighter;
+}
+
+.is-centered {
+  text-align: center;
+  display: block;
+}
+.is-intro {
+  margin: modular-scale(3) inherit;
+  color: $dark-purple;
+}
+
+// Header sizing
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: modular-scale(6 - $i);
+  }
+}
+
+p {
+  margin: 0 0 $small-spacing;
+  -webkit-text-size-adjust: auto;
+
+  &.small {
+    font-size: 90%;
+  }
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($action-color, 15%);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+// Decorators
+
+dl.heading {
+  dt {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: $dark-purple;
+  }
+  dd.icon {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    display: inline-block;
+
+    .fa {
+      color: $red;
+      font-size: 4rem;
+      position: relative;
+      z-index: 99;
+      line-height: 1.4;
+    }
+  }
+}

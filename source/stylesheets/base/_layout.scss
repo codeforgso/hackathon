@@ -1,0 +1,178 @@
+body {
+  background: $sand;
+  @include transition(all 0.30s ease-in-out);
+  position: relative;
+  &.has-menu {
+    padding-left: $base-spacing*6;
+  }
+}
+
+section {
+  margin: 0 !important;
+
+  &.hero {
+    background: $red url('/images/jsnn.png') center center no-repeat fixed;
+    background-size: cover;
+    color: #fff;
+    padding: $base-spacing*6 inherit;
+
+    // Type
+    h1, h5 {
+      margin: 0;
+    }
+    h1 {
+      line-height: 1;
+      margin: modular-scale(-2) 0;
+      font-weight: bold;
+    }
+    h5 {
+      letter-spacing: 0.06rem;
+    }
+  }
+
+  &.schedule {
+    background: darken($sand, 5%);
+    overflow: hidden;
+    padding: $base-spacing*2 inherit;
+
+    .has-list {
+      @include span-columns(5);
+      @include shift(3.5);
+
+      ul {
+        border-left: 5px solid $dark-purple;
+        li {
+          margin: $small-spacing*2 0;
+          padding-left: $base-spacing;
+          position: relative;
+          font-size: 1.4rem;
+
+          .time {
+            display: block;
+            font-size: 1rem;
+            color: $dark-purple;
+            text-transform: uppercase;
+          }
+
+          &:before {
+            content: "";
+            width: 25px;
+            height: 25px;
+            background: url('/images/marker.png') center center no-repeat;
+            position: absolute;
+            left: -15px;
+            top: $small-spacing;
+          }
+        }
+      }
+    }
+  }
+
+  &.sponsors {
+    padding: $base-spacing*2 inherit;
+
+    .feature {
+      @include span-columns(4);
+    }
+  }
+
+  &.speakers {
+    padding: $base-spacing*2 inherit;
+  }
+
+  &.venue {
+    padding: 0 !important;
+
+    .caption {
+      text-align: center;
+      padding: $base-spacing*2;
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  // ID's
+  &#jsnn {
+    @include outer-container;
+    min-height: 300px;
+    background: url('/images/jsnn.jpg') center bottom no-repeat fixed;
+    background-size: cover;
+  }
+}
+
+// Blocks
+
+.wrapper {
+  @include outer-container();
+  padding: $base-spacing;
+  overflow: hidden;
+}
+
+aside {
+  &.feature {
+    @include span-columns(5);
+  }
+}
+
+.third {
+  @include span-columns(4);
+
+  aside {
+    display: block;
+    width: 100%;
+  }
+  h4 {
+    color: $light-purple;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+    padding-top: $base-spacing*2;
+  }
+}
+
+.half {
+  @include span-columns(6);
+
+  img {
+    width: 100%;
+  }
+}
+
+// Cards
+
+.card {
+  text-align: center;
+  padding: $base-spacing;
+}
+
+.avatar {
+  @include span-columns(3);
+  @include omega(4n);
+  text-align: center;
+
+  h4 {
+    font-size: 1.4rem;
+    margin-bottom: $small-spacing/3;
+  }
+  h5 {
+    font-size: 1rem;
+    color: $dark-purple;
+  }
+
+  .round {
+    border-radius: 100px;
+    border: 10px solid transparentize($light-purple, 0.5);
+    margin-bottom: $small-spacing/2;
+  }
+}
+
+footer {
+  padding: $base-spacing*2;
+  background: $dark-purple;
+  color: #fff;
+  .wrapper {
+    padding: 0;
+  }
+}

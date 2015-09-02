@@ -1,0 +1,106 @@
+#{$all-button-inputs},
+button {
+  @include appearance(none);
+  -webkit-font-smoothing: antialiased;
+  background-color: $action-color;
+  border-radius: $base-border-radius;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: darken($action-color, 15%);
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+// CTAs
+
+.button {
+  width: modular-scale(9);
+  margin: $base-spacing*2 auto 0 auto;
+  display: block;
+  clear: both;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06rem;
+  padding: $small-spacing $small-spacing*2;
+  border-radius: 5px;
+  @include transition(all 0.30s ease-in-out);
+
+  &.sand {
+    background: $sand;
+    color: $red;
+  }
+
+  &.red {
+    background: $red;
+    color: $sand;
+    border-bottom: 3px solid darken($red, 20%);
+  }
+
+  &.teal {
+    background: $teal;
+    color: $sand;
+    border-bottom: 3px solid darken($teal, 20%);
+  }
+
+  &.light-purple {
+    background: $light-purple;
+    color: $sand;
+    border-bottom: 3px solid darken($light-purple, 20%);
+  }
+
+  &.spaced {
+    margin-top: $base-spacing;
+  }
+}
+
+// Changer/switcher
+
+ul.changer {
+  width: modular-scale(10);
+  border: 3px solid darken($dark-purple, 15%);
+  display: block;
+  background: #fff;
+  overflow: hidden;
+  border-radius: $small-spacing;
+  margin: auto;
+
+  li {
+    width: 33.33%;
+    text-align: center;
+    float: left;
+    background: #fff;
+    padding: $small-spacing/2 $small-spacing;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 80%;
+    cursor: pointer;
+    color: $dark-gray;
+
+    &.selected {
+      background: $dark-purple;
+      color: $light-purple;
+    }
+    &:hover {
+      background: lighten($dark-purple, 20%);
+    }
+  }
+}
