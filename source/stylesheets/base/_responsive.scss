@@ -1,18 +1,58 @@
 @include media($small-screen-up) {
-  .card {
-    @include span-columns(4);
+  
+  .wrapper{
+    @include outer-container;
+    .avatar {
+         @include span-columns(4);
+    }
+    .third {
+      @include span-columns(4);
+      @include shift(0);
+    }
+    .half {
+      @include span-columns(4);
+      @include shift(0);
+    }
   }
 }
+
 
 @include media($medium-screen-up) {
-  .card {
-    @include span-columns(8);
-  }
+
+   .wrapper {
+     @include outer-container;
+     .avatar {
+       @include span-columns(4);
+       @include shift(0);
+       @include omega(2n);
+     }
+     .third {
+       @include span-columns(6);
+       @include shift(1);
+     }
+     .half {
+       @include span-columns(4);
+       @include shift(0);
+     }
+   }
 }
 
+
 @include media($large-screen-up) {
-  .card {
-    @include span-columns(6);
-    @include omega(2n);
+
+  .wrapper {
+    @include outer-container;
+    .avatar {
+      @include span-columns(6);
+      @include shift(0);
+    }
+    .third {
+      @include span-columns(4);
+      @include shift(0);
+    }
+    .half {
+      @include span-columns(6);
+      @include shift(0);
+    }
   }
 }
