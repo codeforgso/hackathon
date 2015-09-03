@@ -1,7 +1,5 @@
 @include media($small-screen-up) {
-  // .card {
-  //   @include span-columns(4);
-  // }
+  
   .wrapper{
     @include outer-container;
     .avatar {
@@ -20,9 +18,7 @@
 
 
 @include media($medium-screen-up) {
-  // .card {
-  //   @include span-columns(8);
-  // }
+
    .wrapper {
      @include outer-container;
      .avatar {
@@ -43,16 +39,12 @@
 
 
 @include media($large-screen-up) {
-  // .card {
-  //   @include span-columns(6);
-  //   @include omega(2n);
-  // }
+
   .wrapper {
     @include outer-container;
     .avatar {
       @include span-columns(6);
       @include shift(0);
-      //@include omega(5n);
     }
     .third {
       @include span-columns(4);
