@@ -3,7 +3,7 @@ body {
   @include transition(all 0.30s ease-in-out);
   position: relative;
   &.has-menu {
-    padding-left: $base-spacing*6;
+    // Silence is golden
   }
 }
 
