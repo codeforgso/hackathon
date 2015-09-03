@@ -5,6 +5,8 @@ $ ->
   dismiss = $('body.has-menu')
   overlay = $('.menu-fade-screen')
 
+  # Hamburger menu
+
   trigger.click ->
     menu.toggleClass('menu-open')
     body.toggleClass('has-menu')
@@ -13,6 +15,8 @@ $ ->
   overlay.click ->
     menu.toggleClass('menu-open')
     $(this).toggleClass('is-visible')
+
+  # Schedule switcher
 
   $('.changer li').click (event) ->
     event.preventDefault()

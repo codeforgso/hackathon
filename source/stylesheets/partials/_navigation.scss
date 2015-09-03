@@ -58,7 +58,7 @@ ul.menu-list {
   height: 100%;
   background: darken($dark-purple, 20%);
   color: $light-purple;
-  width: 12em;
+  width: 16em;
   padding: $small-spacing $base-spacing*2 $small-spacing $small-spacing;
   @include transition(all 0.30s ease-in-out);
   z-index: 30;
