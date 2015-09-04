@@ -7,7 +7,6 @@ gem "rack-contrib"
 gem 'bitters'
 gem 'bourbon'
 gem 'neat'
-gem 'refills'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"

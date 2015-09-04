@@ -77,6 +77,9 @@ section {
   }
 
   &.speakers {
+    .wrapper {
+      padding: $base-spacing 0;
+    }
   }
 
   &.venue {
@@ -151,8 +154,6 @@ aside {
 }
 
 .avatar {
-  @include span-columns(3);
-  @include omega(4n);
   text-align: center;
 
   h4 {
@@ -180,6 +181,7 @@ footer {
     @include span-columns(3);
     @include shift(3.5);
   }
+
   ul.social {
     @include span-columns(3);
     margin-bottom: $small-spacing;

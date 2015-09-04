@@ -4,11 +4,12 @@
 @import "base/base";   /* Bitters needs to be imported before Neat */
 @import "neat";
 
-// Custom sheets
-@import "base/layout";
 @import "base/responsive";
 
 // Partials
 @import "partials/navigation";
 @import "partials/internal";
 @import "partials/patterns";
+
+// Custom sheets
+@import "base/layout";
