@@ -114,6 +114,10 @@ section {
   &.narrow {
     @include outer-container(60%);
   }
+  &.left {
+    padding-left: 0;
+    padding-right: 25%;
+  }
 }
 
 aside {
@@ -167,7 +171,7 @@ aside {
 
   .round {
     border-radius: 100px;
-    border: 10px solid transparentize($light-purple, 0.5);
+    border: 10px solid transparentize($teal, 0.5);
     margin-bottom: $small-spacing/2;
   }
 }

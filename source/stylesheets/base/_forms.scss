@@ -3,6 +3,10 @@ fieldset {
   border: $base-border;
   margin: 0 0 $small-spacing;
   padding: $base-spacing;
+
+  &.match {
+    background: darken($sand, 2%);
+  }
 }
 
 input,
@@ -75,4 +79,7 @@ select {
   margin-bottom: $base-spacing;
   max-width: 100%;
   width: auto;
+}
+.required-message {
+  display: none;
 }

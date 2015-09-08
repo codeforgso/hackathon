@@ -41,18 +41,33 @@ button {
   text-align: center;
   letter-spacing: 0.06rem;
   padding: $small-spacing $small-spacing*2;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-weight: bolder;
   @include transition(all 0.30s ease-in-out);
 
   &.sand {
     background: $sand;
     color: $red;
+    box-shadow:
+      0 1px 0 lighten($red, 15%),
+      0 6px 0 darken($red, 30%)
+    ;
   }
 
   &.red {
     background: $red;
     color: $sand;
-    border-bottom: 3px solid darken($red, 20%);
+    cursor: pointer;
+    box-shadow:
+      0 1px 0 lighten($red, 15%),
+      0 6px 0 darken($red, 25%),
+      0 8px 10px transparentize(#222, 0.4)
+    ;
+    text-shadow: 0 -1px 0 darken($red, 25%);
+
+    &:hover {
+      background: darken($red, 10%);
+    }
   }
 
   &.teal {
