@@ -1,11 +1,23 @@
+.status-bar {
+  background: darken($red, 25%);
+  margin: 0 !important;
+  padding: $small-spacing*1.4 $base-spacing*2.5 $small-spacing;
+  text-align: center;
+  position: relative;
+
+  h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: transparentize($sand, 0.5);
+    line-height: 1;
+  }
+}
+
 header.internal {
   background: $red;
-  padding: $base-spacing;
+  padding: $base-spacing $base-spacing $base-spacing $base-spacing*3;
   color: $sand;
-
-  .wrapper {
-    padding: 0;
-  }
+  margin: 0 !important;
 
   h4 {
     line-height: 1;
