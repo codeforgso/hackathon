@@ -140,6 +140,11 @@ aside {
     letter-spacing: 0.06rem;
     padding-top: $base-spacing*2;
   }
+  h5 {
+    color: $dark-purple;
+    text-align: center;
+    padding-top: $small-spacing;
+  }
 }
 
 .half {
@@ -180,6 +185,14 @@ footer {
   padding: $base-spacing*2;
   background: $dark-purple;
   color: #fff;
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 
   img {
     @include span-columns(3);

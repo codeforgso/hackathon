@@ -68,4 +68,7 @@ ul.menu-list {
   &.menu-open {
     left: 0;
   }
+  a {
+    color: $light-purple;
+  }
 }
