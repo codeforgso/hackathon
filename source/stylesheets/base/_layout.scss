@@ -11,6 +11,17 @@ section {
   margin: 0 !important;
   padding: $base-spacing*2 0;
 
+  &.generic {
+    background: #fff;
+    overflow: hidden;
+
+    .narrow {
+      @include span-columns(6);
+      @include shift(3);
+      text-align: center;
+    }
+  }
+
   &.hero {
     background: $red url('/images/jsnn.png') center center no-repeat fixed;
     background-size: cover;
