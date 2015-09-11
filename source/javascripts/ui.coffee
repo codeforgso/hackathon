@@ -16,6 +16,10 @@ $ ->
     menu.toggleClass('menu-open')
     $(this).toggleClass('is-visible')
 
+  $('.menu-list li').click ->
+    menu.toggleClass('menu-open')
+    overlay.toggleClass('is-visible')
+
   # Schedule switcher
 
   $('.changer li').click (event) ->

@@ -52,6 +52,9 @@ button {
       0 1px 0 lighten($red, 15%),
       0 6px 0 darken($red, 30%)
     ;
+    a {
+      color: $red;
+    }
   }
 
   &.red {
