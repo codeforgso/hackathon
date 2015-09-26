@@ -64,6 +64,11 @@
    .wrapper {
      @include outer-container;
 
+     .avatar {
+       @include span-columns(4);
+       @include omega(2n);
+     }
+
      .third {
        @include span-columns(6);
        @include shift(1);
@@ -123,8 +128,8 @@
     @include outer-container;
 
     .avatar {
-      @include span-columns(4);
-      @include omega(3n);
+      @include span-columns(3);
+      @include omega(4n);
     }
 
     .third {
