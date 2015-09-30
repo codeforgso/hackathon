@@ -181,6 +181,11 @@ aside {
     color: #fff;
   }
 
+  a {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+  }
+
   .round {
     border-radius: 100px;
     border: 10px solid transparentize(#fff, 0.5);
