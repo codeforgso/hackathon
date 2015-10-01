@@ -81,9 +81,15 @@ section {
   }
 
   &.sponsors {
+    background: $light-green;
 
-    .feature {
-      @include span-columns(4);
+    .sponsor {
+      height: 140px;
+      padding: 0;
+      img {
+        margin-top: -50px;
+        opacity: 0.6;
+      }
     }
   }
 
@@ -104,6 +110,14 @@ section {
       p {
         text-align: left;
       }
+    }
+  }
+
+  &.generic {
+    .feature {
+      @include span-columns(4);
+      padding: $small-spacing $small-spacing $small-spacing*4;
+      border: 1px solid #d7d7d7;
     }
   }
 

@@ -9,7 +9,7 @@ title: Code For Greensboro Fall Hackathon | November 6-8, 2015
     <h5 class="is-centered">November 6-8, 2015 &bullet; Joint School of Nanoscience and Nanoengineering &bullet; Greensboro, NC</h5>
 
     <div class="button sand">
-      <%=link_to "Get Your Ticket", "#get_notified" %>
+      <%=link_to "Get Your Ticket", "#get_tickets" %>
     </div>
 
   </div>
@@ -18,7 +18,6 @@ title: Code For Greensboro Fall Hackathon | November 6-8, 2015
 <section class="about" id="about">
   <div class="wrapper">
     <h3 class="is-centered is-intro">Work with Greensboro's open data, meet awesome people, and make a difference in your community.</h3>
-
     <hr>
 
     <div class="third">
@@ -99,6 +98,20 @@ title: Code For Greensboro Fall Hackathon | November 6-8, 2015
 
 </section>
 
+<section class="sponsors">
+  <h3 class="is-centered">Sponsored &amp; supported by</h3>
+
+  <div class="wrapper">
+
+    <div class="sponsor"><%=image_tag ('/images/socrata.png') %></div>
+    <div class="sponsor"><%=image_tag ('/images/coder-foundry.png') %></div>
+    <div class="sponsor"><%=image_tag ('/images/redhat.png') %></div>
+    <div class="sponsor"><%=image_tag ('/images/wake-forest.png') %></div>
+
+  </div>
+
+</section>
+
 <section class="venue" id="venues">
   <div class="wrapper">
     <div class="half">
@@ -125,6 +138,7 @@ title: Code For Greensboro Fall Hackathon | November 6-8, 2015
   </div>
 
 </section>
+
 
 <!--
 
@@ -167,45 +181,17 @@ title: Code For Greensboro Fall Hackathon | November 6-8, 2015
 
 -->
 
-<section class="generic" id="get_notified">
-
-  <div class="has-border">
-    <h4>Registration Opens in <strong>1 Day!</strong></h4>
-  </div>
-
-  <h3 class="is-centered">Get Registration Reminders &amp; More</h3>
-  <p class="narrow">
-    Join our Fall 2015 Hackathon Mailing List to stay in the loop as we add speakers, workshops and other fun stuff. Only timely info sent infrequently. You'll be glad you did it!
-  </p>
-  <!-- Begin MailChimp Signup Form -->
-  <div id="mc_embed_signup">
-      <form action="//tinygoatstudio.us5.list-manage.com/subscribe/post?u=631459a8891676ebf42358e9b&amp;id=58f82f888f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-	          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;">
-        <input type="text" name="b_631459a8891676ebf42358e9b_58f82f888f" tabindex="-1" value="">
-      </div>
-      <input type="submit" value="Get Notified" name="subscribe" id="mc-embedded-subscribe" class="button red spaced">
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
-</section>
-
-
-<!--
-<section class="sponsors">
-  <h3 class="is-centered">Sponsored &amp; supported by</h3>
+<section class="generic" id="get_tickets">
 
   <div class="wrapper">
-
-    <%=image_tag ('/images/sponsors.png') %>
-
+    <h3 class="is-centered">We'll see you there.</h3>
+    <h4 class="is-centered">
+      Join us for three days of civic hacking, problem solving, new friends, and some surprises. Do good while having fun. (There are also rumors of tacos.)
+    </h4>
+    <div class="button red">
+      <%=link_to "Register Now", "https://www.eventbrite.com/e/code-for-greensboro-fall-hackathon-2015-tickets-18078770088", :target => "new" %>
+    </div>
   </div>
 
-  <div class="button red spaced">Don't Miss Out</div>
 
 </section>
--->

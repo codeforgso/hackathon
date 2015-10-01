@@ -45,6 +45,14 @@ button {
   font-weight: bolder;
   @include transition(all 0.30s ease-in-out);
 
+  a {
+    color: #fff;
+
+    &:hover {
+      color: transparentize(#fff, 0.1);
+    }
+  }
+
   &.sand {
     background: $sand;
     color: $red;
