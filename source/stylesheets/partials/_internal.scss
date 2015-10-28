@@ -1,9 +1,8 @@
 .status-bar {
   background: darken($red, 25%);
   margin: 0 !important;
-  padding: $small-spacing*1.4 $base-spacing*2.5 $small-spacing;
+  padding: $small-spacing*1.4 0;
   text-align: center;
-  position: relative;
 
   h4 {
     font-size: 1rem;
@@ -15,12 +14,47 @@
 
 header.internal {
   background: $red;
-  padding: $base-spacing $base-spacing $base-spacing $base-spacing*3;
+  padding: $base-spacing;
   color: $sand;
   margin: 0 !important;
 
   h4 {
     line-height: 1;
     margin: 0;
+  }
+}
+
+img.left {
+  border-radius: 100px;
+  width: 64px;
+  float: left;
+  margin-right: $small-spacing;
+}
+
+ul.key {
+  @include clearfix;
+  display: block;
+  margin-bottom: $base-spacing*2;
+  
+  li {
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+
+    .circle {
+      height: 5px;
+      padding: 0 10px;
+      border-radius: 100px;
+      margin: 0 $small-spacing 0 $small-spacing/2;
+      &.red {
+        background: $red;
+      }
+      &.orange {
+        background: $orange;
+      }
+      &.purple {
+        background: $light-purple;
+      }
+    }
   }
 }

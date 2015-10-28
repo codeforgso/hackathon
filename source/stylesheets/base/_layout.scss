@@ -139,15 +139,52 @@ section {
   &.narrow {
     @include outer-container(60%);
   }
-  &.left {
-    padding-left: $base-spacing*2;
-    padding-right: 25%;
+}
+.leftcolumn {
+  @include media($small-screen) {
+    @include span-columns(12);
+  }
+  @include media($medium-screen) {
+    @include span-columns(12);
+  }
+  @include media($large-screen) {
+    @include span-columns(9);
   }
 }
 
 aside {
   &.feature {
     @include span-columns(5);
+  }
+  &.sidebar {
+    background: darken($sand, 5%);
+    padding: $small-spacing;
+
+    @include media($small-screen) {
+      display: none;
+    }
+    @include media($medium-screen) {
+      display: none;
+    }
+    @include media($large-screen) {
+      @include span-columns(3);
+      display: block;
+    }
+
+    p {
+      font-size: 80%;
+    }
+
+    a {
+      background: $red;
+      color: #fff;
+      text-align: center;
+      display: inline-block;
+      padding: $small-spacing $small-spacing*2;
+      &:hover {
+        background: darken($red, 10%);
+      }
+    }
   }
 }
 

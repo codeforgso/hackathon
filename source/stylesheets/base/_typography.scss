@@ -22,6 +22,24 @@ h6 {
   font-weight: lighter;
 }
 
+.is-rounded {
+  display: inline-block;
+  border-radius: 40px;
+  color: #fff;
+  padding: $small-spacing/2 $small-spacing;
+  font-size: 80%;
+
+  &.a {
+    backgrounf: $red;
+  }
+  &.c1 {
+    background: $orange;
+  }
+  &.c2 {
+    background: $light-purple;
+  }
+}
+
 .is-centered {
   text-align: center;
   display: block;
