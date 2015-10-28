@@ -135,6 +135,10 @@ section {
   background: $medium-gray;
   @include clearfix;
 
+  .days, .hours, .minutes, .seconds {
+    font-weight: 700 !important;
+  }
+
   .wrapper {
     padding: 0;
     @include outer-container(60%);
