@@ -135,13 +135,23 @@ section {
   background: $medium-gray;
   @include clearfix;
 
+  @include media($small-screen) {
+    display: none;
+  }
+  @include media($medium-screen) {
+    display: none;
+  }
+  @include media($large-screen) {
+    display: block;
+  }
+
   .days, .hours, .minutes, .seconds {
     font-weight: 700 !important;
   }
 
   .wrapper {
     padding: 0;
-    @include outer-container(60%);
+    @include outer-container(70%);
   }
   h5 {
     @include span-columns(6);
