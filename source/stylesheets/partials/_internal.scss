@@ -24,11 +24,42 @@ header.internal {
   }
 }
 
-img.left {
-  border-radius: 100px;
-  width: 64px;
+.grav {
   float: left;
   margin-right: $small-spacing;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
+  img {
+    border-radius: 100px;
+    width: 64px;
+    position: relative;
+    z-index: 30;
+  }
+  .fa {
+    color: #fff;
+  }
+  .twitter-overlay {
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+    background: $blue;
+    position: absolute;
+    top: 128px;
+    left: 0;
+    z-index: 40;
+    line-height: 64px;
+    text-align: center;
+    font-size: 2rem;
+    @include transition(all 0.10s ease-in-out);
+  }
+  &:hover {
+    .twitter-overlay {
+      top: 0;
+    }
+  }
 }
 
 ul.key {
