@@ -28,6 +28,32 @@
 
     <div class="menu-fade-screen"></div>
 
+    <div class="banner">
+      <div class="wrapper">
+        <h5>
+          There's still time. <%=link_to "Get your tickets today.", "http://bit.ly/1NAyiSw" %>
+        </h5>
+        <ul id="countdown">
+          <li>
+        	  <span class="days">00</span>
+        	  <span class="timeRefDays"><strong>days</strong></span>
+          </li>
+          <li>
+            <span class="hours">00</span>
+            <span class="timeRefHours"><strong>hours</strong></span>
+          </li>
+          <li>
+            <span class="minutes">00</span>
+            <span class="timeRefMinutes"><strong>minutes</strong></span>
+          </li>
+          <li>
+            <span class="seconds">00</span>
+            <span class="timeRefSeconds"><strong>seconds</strong></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <%= partial "partials/navigation" %>
 
     <%= yield %>
