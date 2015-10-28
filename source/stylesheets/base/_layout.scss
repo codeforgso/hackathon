@@ -131,6 +131,34 @@ section {
 
 // Blocks
 
+.banner {
+  background: $medium-gray;
+  @include clearfix;
+
+  .wrapper {
+    padding: 0;
+    @include outer-container(60%);
+  }
+  h5 {
+    @include span-columns(6);
+    color: #fff;
+    line-height: 2;
+    margin-bottom: 0;
+  }
+  #countdown {
+    @include clearfix;
+    line-height: 2.5;
+    @include span-columns(6);
+    margin-bottom: 0;
+    li {
+      float: left;
+      color: lighten($medium-gray, 50%);
+      width: 25%;
+      text-align: center;
+    }
+  }
+}
+
 .wrapper {
   @include outer-container();
   padding: $base-spacing;
