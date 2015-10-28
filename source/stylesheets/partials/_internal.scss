@@ -35,7 +35,7 @@ ul.key {
   @include clearfix;
   display: block;
   margin-bottom: $base-spacing*2;
-  
+
   li {
     float: left;
     text-transform: uppercase;
@@ -54,6 +54,9 @@ ul.key {
       }
       &.purple {
         background: $light-purple;
+      }
+      &.green {
+        background: $teal;
       }
     }
   }

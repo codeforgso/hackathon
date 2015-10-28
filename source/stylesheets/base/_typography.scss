@@ -30,13 +30,16 @@ h6 {
   font-size: 80%;
 
   &.a {
-    backgrounf: $red;
+    background: $red;
   }
   &.c1 {
     background: $orange;
   }
   &.c2 {
     background: $light-purple;
+  }
+  &.hq {
+    background: $teal;
   }
 }
 
