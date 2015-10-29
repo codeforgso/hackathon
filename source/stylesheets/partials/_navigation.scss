@@ -5,7 +5,7 @@
   background: transparentize(#555, 0.7);
   width: 100%;
   height: 100%;
-  z-index: 20;
+  z-index: 60;
   display: none;
   @include transition(all 0.30s ease-in-out);
 
@@ -25,6 +25,7 @@
   text-align: center;
   line-height: 1.2;
   background: $red;
+  z-index: 50;
   @include transition(all 0.25s ease-in-out);
   &:before {
   	content: "";
@@ -61,7 +62,7 @@ ul.menu-list {
   width: 16em;
   padding: $small-spacing $base-spacing*2 $small-spacing $small-spacing;
   @include transition(all 0.30s ease-in-out);
-  z-index: 30;
+  z-index: 60;
   li {
     padding: $small-spacing;
   }
