@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 
 body {
   @include font-feature-settings("kern", "liga", "pnum");
@@ -50,6 +50,10 @@ h6 {
 .is-intro {
   margin: modular-scale(3) inherit;
   color: $dark-purple;
+}
+
+strong {
+  font-weight: bolder;
 }
 
 // Header sizing
