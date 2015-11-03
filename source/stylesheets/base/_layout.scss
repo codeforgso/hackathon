@@ -48,8 +48,7 @@ section {
     overflow: hidden;
 
     .has-list {
-      @include span-columns(5);
-      @include shift(3.5);
+      @include outer-container(65%);
 
       ul {
         border-left: 5px solid $dark-purple;
@@ -237,7 +236,15 @@ aside {
 }
 
 .third {
-  @include span-columns(4);
+  @include media($small-screen-up) {
+    @include span-columns(4);
+  }
+  @include media($medium-screen-up) {
+    @include span-columns(8);
+  }
+  @include media($large-screen-up) {
+    @include span-columns(4);
+  }
 
   aside {
     display: block;
