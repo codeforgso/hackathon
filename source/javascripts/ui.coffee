@@ -1,5 +1,5 @@
 $ ->
-  alert "foo"
+
   trigger = $('.menu-trigger')
   menu    = $('.menu-list')
   body    = $('body')
