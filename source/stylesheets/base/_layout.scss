@@ -274,6 +274,46 @@ aside {
 
 // Cards
 
+.team-card {
+  border-radius: 4px;
+  background: #fff;
+  @include span-columns(4);
+  @include omega(3n);
+  margin-bottom: $base-spacing;
+  text-align: center;
+  border-right: 1px solid darken($sand, 10%);
+  border-bottom: 1px solid darken($sand, 10%);
+  position: relative;
+  padding-top: 15px;
+
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $dark-purple;
+    letter-spacing: 0.06rem;
+    margin: 0;
+  }
+
+  dl {
+    dt {
+      font-size: 1.3rem;
+    }
+  }
+
+  .score {
+    position: absolute;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    left: 45%;
+    top: -20px;
+    text-align: center;
+    line-height: 40px;
+    background: $dark-purple;
+    color: #fff;
+  }
+}
+
 .avatar {
   text-align: center;
 
